@@ -1,0 +1,117 @@
+@import url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotham";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3); /* Ombre uniquement en bas */
+  padding: 0 10rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  padding: 1rem;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav div {
+  width: 1px;
+  background-color: #7a99ac;
+  height: 52px;
+  opacity: 24%;
+}
+
+main,
+footer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#Accueil img {
+  border-radius: 14px;
+  width: 100%;
+}
+
+#Accueil h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  position: relative;
+}
+
+#Accueil h1::after {
+  content: "";
+  position: absolute;
+  top: 45%; /* Positionne le pseudo-élément à partir de la moitié du texte */
+  left: 0;
+  right: 25%;
+  height: 30%; /* Prend la moitié de la hauteur du texte */
+  background-color: #a07dcb;
+  z-index: -1; /* Place l'élément de fond derrière le texte */
+}
+
+#Accueil h2 {
+  width: 65%;
+  font-size: 2.1875rem;
+  font-weight: 400;
+  font-weight: normal;
+  border-bottom: #a07dcb 1px solid;
+  padding-bottom: 0.5rem;
+}
+
+#Accueil p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+#Accueil a {
+  background-color: #008c95;
+  text-align: center;
+  font-size: 2.1875rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  float: right;
+  padding: 1rem 3rem;
+}
+
+footer{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color:#777777;
+    font-size: 1rem;
+}
